@@ -14,7 +14,7 @@ export function Root() {
   }, [pathname]);
 
   return (
-    <div style={{ backgroundColor: "#0F172A", fontFamily: "'Inter', sans-serif", minHeight: "100vh" }}>
+    <div style={{ backgroundColor: "#F5F1E8", fontFamily: "'Inter', sans-serif", minHeight: "100vh", color: "#1F2933" }}>
       <Navbar />
       <main>
         <Outlet />
@@ -28,6 +28,7 @@ export function Root() {
           className="flex items-center justify-center w-12 h-12 rounded-full shadow-lg transition-transform hover:scale-110"
           style={{
             background: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)",
+            boxShadow: "0 14px 36px rgba(31,41,51,0.18)",
           }}
           title="Open Instagram"
         >
@@ -42,7 +43,7 @@ export function Root() {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-14 h-14 rounded-full shadow-lg transition-transform hover:scale-110"
-          style={{ backgroundColor: "#25D366" }}
+          style={{ backgroundColor: "#25D366", boxShadow: "0 16px 38px rgba(37,211,102,0.24)" }}
           title="Chat on WhatsApp"
         >
           <svg width="28" height="28" viewBox="0 0 24 24" fill="white">

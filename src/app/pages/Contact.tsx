@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
 
 const BUSINESS_NAME = "BL Construction and Design";
-const CONTACT_EMAIL = "kvishwa180@gmail.com";
+const CONTACT_EMAIL = "blconstructionanddesign@gmail.com";
 const GOOGLE_MAPS_URL = "https://www.google.com/maps/place/BL+Construction+and+design/@12.8948897,79.127065,16.38z/data=!4m10!1m2!2m1!1sBL+Construction+and+design+Kuppam!3m6!1s0x3bad3900361f4713:0x191e58f4cda78c23!8m2!3d12.8946557!4d79.1314407!15sCiFCTCBDb25zdHJ1Y3Rpb24gYW5kIGRlc2lnbiBLdXBwYW1aIyIhYmwgY29uc3RydWN0aW9uIGFuZCBkZXNpZ24ga3VwcGFtkgEUY29uc3RydWN0aW9uX2NvbXBhbnmaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnRPTWxGc1JqTmFSa0poVkVjNE1sSlZiRVpPUmxWNFZEQnNNbUZJWXhBQuABAPoBBAgAEEw!16s%2Fg%2F11y54zscr0?hl=en-IN&entry=ttu&g_ep=EgoyMDI2MDMxNywIKXMDSoASAFQAw%3D%3D";
 const CONTACT_NUMBER = "8778387924";
 const DISPLAY_CONTACT_NUMBER = "+91 87783 87924";
@@ -91,15 +91,15 @@ export function Contact() {
     width: "100%",
     padding: "0.875rem 1.25rem",
     borderRadius: "0.75rem",
-    backgroundColor: "#0F172A",
-    border: `1.5px solid ${focused === field ? "#FBBF24" : "rgba(255,255,255,0.1)"}`,
-    color: "white",
+    backgroundColor: "#FFFDF9",
+    border: `1.5px solid ${focused === field ? "#B88A52" : "rgba(92,71,43,0.12)"}`,
+    color: "#1F2933",
     fontFamily: "'Inter', sans-serif",
     fontSize: "0.9rem",
     outline: "none",
     transition: "border-color 0.2s",
     boxSizing: "border-box" as const,
-    boxShadow: focused === field ? "0 0 0 3px rgba(251,191,36,0.08)" : "none",
+    boxShadow: focused === field ? "0 0 0 3px rgba(184,138,82,0.1)" : "none",
   });
 
   const contactCards = [
@@ -132,31 +132,31 @@ export function Contact() {
   ];
 
   return (
-    <div style={{ backgroundColor: "#0F172A" }}>
+    <div style={{ backgroundColor: "#F8F3EA" }}>
       {/* Page Hero */}
       <div
         className="pt-32 sm:pt-36 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg, #081120 0%, #0B1527 48%, #0F172A 100%)" }}
+        style={{ background: "linear-gradient(180deg, #F8F3EA 0%, #F2ECE1 48%, #F8F3EA 100%)" }}
       >
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, #FBBF24 0%, transparent 30%), radial-gradient(circle at 80% 10%, rgba(59,130,246,0.35) 0%, transparent 28%)" }} />
-        <div className="absolute inset-x-0 bottom-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(251,191,36,0.45), transparent)" }} />
+        <div className="absolute inset-0 opacity-40" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, rgba(184,138,82,0.16) 0%, transparent 30%), radial-gradient(circle at 80% 10%, rgba(205,185,155,0.4) 0%, transparent 28%)" }} />
+        <div className="absolute inset-x-0 bottom-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(184,138,82,0.3), transparent)" }} />
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-end">
             <div>
-              <div style={{ color: "#FBBF24", fontSize: "0.8rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: "'Inter', sans-serif", fontWeight: 600, marginBottom: "1rem" }}>
+              <div style={{ color: "#B88A52", fontSize: "0.8rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: "'Inter', sans-serif", fontWeight: 600, marginBottom: "1rem" }}>
                 Start The Conversation
               </div>
-              <h1 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 5vw, 4.2rem)", color: "white", lineHeight: 1.08, marginBottom: "1rem", maxWidth: "12ch" }}>
+              <h1 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 5vw, 4.2rem)", color: "#1F2933", lineHeight: 1.08, marginBottom: "1rem", maxWidth: "12ch" }}>
                 Let's Build Something Exceptional
               </h1>
-              <p style={{ color: "#94A3B8", fontFamily: "'Inter', sans-serif", fontSize: "clamp(0.95rem, 1.8vw, 1rem)", maxWidth: "34rem", lineHeight: 1.75 }}>
+              <p style={{ color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "clamp(0.95rem, 1.8vw, 1rem)", maxWidth: "34rem", lineHeight: 1.75 }}>
                 Tell us what you're planning and our team will turn it into a clear next step. Share the project type, budget range, and timeline, and we'll follow up with practical guidance.
               </p>
             </div>
 
             <div
               className="p-5 sm:p-6 rounded-3xl"
-              style={{ backgroundColor: "rgba(19,31,53,0.9)", border: "1px solid rgba(251,191,36,0.14)", boxShadow: "0 24px 80px rgba(0,0,0,0.35)" }}
+              style={{ backgroundColor: "#FFFDF9", border: "1px solid rgba(92,71,43,0.08)", boxShadow: "0 22px 55px rgba(31,41,51,0.08)" }}
             >
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {[
@@ -164,11 +164,11 @@ export function Contact() {
                   { value: "500+", label: "Projects completed" },
                   { value: "30+", label: "Years experience" },
                 ].map((item) => (
-                  <div key={item.label} className="rounded-2xl p-3.5 sm:p-4" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
-                    <div style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(1.2rem, 2vw, 1.45rem)", color: "#FBBF24", lineHeight: 1, marginBottom: "0.4rem" }}>
+                  <div key={item.label} className="rounded-2xl p-3.5 sm:p-4" style={{ backgroundColor: "#F8F3EA", border: "1px solid rgba(92,71,43,0.08)" }}>
+                    <div style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(1.2rem, 2vw, 1.45rem)", color: "#B88A52", lineHeight: 1, marginBottom: "0.4rem" }}>
                       {item.value}
                     </div>
-                    <div style={{ color: "#94A3B8", fontFamily: "'Inter', sans-serif", fontSize: "0.78rem", lineHeight: 1.45 }}>
+                    <div style={{ color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.78rem", lineHeight: 1.45 }}>
                       {item.label}
                     </div>
                   </div>
@@ -186,22 +186,22 @@ export function Contact() {
             <div className="lg:col-span-2 flex flex-col gap-6">
               <div
                 className="p-6 rounded-3xl"
-                style={{ background: "linear-gradient(180deg, rgba(251,191,36,0.12) 0%, rgba(19,31,53,0.95) 100%)", border: "1px solid rgba(251,191,36,0.18)" }}
+                style={{ background: "linear-gradient(180deg, rgba(184,138,82,0.08) 0%, #FFFDF9 100%)", border: "1px solid rgba(92,71,43,0.08)", boxShadow: "0 14px 36px rgba(31,41,51,0.06)" }}
               >
-                <div style={{ color: "#FBBF24", fontSize: "0.8rem", letterSpacing: "0.14em", textTransform: "uppercase", fontFamily: "'Inter', sans-serif", fontWeight: 700, marginBottom: "0.9rem" }}>
+                <div style={{ color: "#B88A52", fontSize: "0.8rem", letterSpacing: "0.14em", textTransform: "uppercase", fontFamily: "'Inter', sans-serif", fontWeight: 700, marginBottom: "0.9rem" }}>
                   Why Reach Out
                 </div>
-                <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, color: "white", fontSize: "clamp(1.35rem, 2.4vw, 1.6rem)", lineHeight: 1.15, marginBottom: "0.85rem" }}>
+                <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, color: "#1F2933", fontSize: "clamp(1.35rem, 2.4vw, 1.6rem)", lineHeight: 1.15, marginBottom: "0.85rem" }}>
                   Clear answers before construction starts
                 </h2>
-                <p style={{ color: "#CBD5E1", fontFamily: "'Inter', sans-serif", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
+                <p style={{ color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
                   We help homeowners, developers, and commercial teams move from idea to action with realistic scopes, timelines, and pricing direction.
                 </p>
                 <div className="flex flex-col gap-3">
                   {["Free initial consultation", "Budget-aligned recommendations", `Call or WhatsApp: ${DISPLAY_CONTACT_NUMBER}`].map((item) => (
                     <div key={item} className="flex items-center gap-3">
-                      <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: "#FBBF24" }} />
-                      <span style={{ color: "#E2E8F0", fontFamily: "'Inter', sans-serif", fontSize: "0.9rem" }}>{item}</span>
+                      <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: "#B88A52" }} />
+                      <span style={{ color: "#334155", fontFamily: "'Inter', sans-serif", fontSize: "0.9rem" }}>{item}</span>
                     </div>
                   ))}
                 </div>
@@ -209,8 +209,8 @@ export function Contact() {
                   <a
                     href={`tel:${CONTACT_NUMBER}`}
                     style={{
-                      backgroundColor: "#FBBF24",
-                      color: "#0F172A",
+                      backgroundColor: "#B88A52",
+                      color: "#FFFDF9",
                       fontFamily: "'Poppins', sans-serif",
                       fontWeight: 700,
                       fontSize: "0.9rem",
@@ -226,15 +226,15 @@ export function Contact() {
                     target="_blank"
                     rel="noreferrer"
                     style={{
-                      border: "1px solid rgba(255,255,255,0.14)",
-                      color: "white",
+                      border: "1px solid rgba(92,71,43,0.12)",
+                      color: "#334155",
                       fontFamily: "'Poppins', sans-serif",
                       fontWeight: 600,
                       fontSize: "0.9rem",
                       padding: "0.8rem 1.1rem",
                       borderRadius: "0.85rem",
                       textDecoration: "none",
-                      backgroundColor: "rgba(255,255,255,0.03)",
+                      backgroundColor: "#F8F3EA",
                     }}
                   >
                     WhatsApp Us
@@ -247,15 +247,15 @@ export function Contact() {
                 <div
                   key={title}
                   className="flex gap-4 p-5 rounded-2xl transition-all duration-300"
-                  style={{ backgroundColor: "#131F35", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 14px 40px rgba(0,0,0,0.18)" }}
+                  style={{ backgroundColor: "#FFFDF9", border: "1px solid rgba(92,71,43,0.08)", boxShadow: "0 14px 36px rgba(31,41,51,0.06)" }}
                 >
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(251,191,36,0.12)", marginTop: "0.1rem" }}>
-                    <Icon size={22} style={{ color: "#FBBF24" }} />
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(184,138,82,0.12)", marginTop: "0.1rem" }}>
+                    <Icon size={22} style={{ color: "#B88A52" }} />
                   </div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, color: "white", fontSize: "0.96rem", marginBottom: "0.35rem" }}>{title}</div>
+                    <div style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, color: "#1F2933", fontSize: "0.96rem", marginBottom: "0.35rem" }}>{title}</div>
                     {lines.map((l, i) => (
-                      <div key={i} style={{ color: "#94A3B8", fontFamily: "'Inter', sans-serif", fontSize: "0.84rem", lineHeight: 1.6 }}>{l}</div>
+                      <div key={i} style={{ color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.84rem", lineHeight: 1.6 }}>{l}</div>
                     ))}
                     {linkLabel && linkHref && (
                       <div className="mt-3">
@@ -263,7 +263,7 @@ export function Contact() {
                           href={linkHref}
                           target={linkHref.startsWith("http") ? "_blank" : undefined}
                           rel={linkHref.startsWith("http") ? "noreferrer" : undefined}
-                          style={{ color: "#FBBF24", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", textDecoration: "none", fontWeight: 700 }}
+                          style={{ color: "#B88A52", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", textDecoration: "none", fontWeight: 700 }}
                         >
                           {linkLabel} {"->"}
                         </a>
@@ -278,25 +278,25 @@ export function Contact() {
             <div className="lg:col-span-3">
               <div
                 className="p-6 sm:p-8 rounded-3xl"
-                style={{ backgroundColor: "#131F35", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 28px 80px rgba(0,0,0,0.28)", position: "relative", overflow: "hidden" }}
+                style={{ backgroundColor: "#FFFDF9", border: "1px solid rgba(92,71,43,0.08)", boxShadow: "0 28px 65px rgba(31,41,51,0.08)", position: "relative", overflow: "hidden" }}
               >
-                <div className="absolute inset-x-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(251,191,36,0.45), transparent)" }} />
+                <div className="absolute inset-x-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(184,138,82,0.35), transparent)" }} />
                 {submitted ? (
                   <div className="flex flex-col items-center justify-center text-center py-16">
                     <div className="w-20 h-20 rounded-full flex items-center justify-center mb-6" style={{ backgroundColor: "#22C55E18" }}>
                       <CheckCircle size={40} style={{ color: "#22C55E" }} />
                     </div>
-                    <h3 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, color: "white", fontSize: "1.8rem", marginBottom: "1rem" }}>
+                    <h3 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, color: "#1F2933", fontSize: "1.8rem", marginBottom: "1rem" }}>
                       Request Submitted!
                     </h3>
-                    <p style={{ color: "#64748B", fontFamily: "'Inter', sans-serif", lineHeight: 1.7, maxWidth: "28rem", marginBottom: "2rem" }}>
+                    <p style={{ color: "#5E6770", fontFamily: "'Inter', sans-serif", lineHeight: 1.7, maxWidth: "28rem", marginBottom: "2rem" }}>
                       Thank you for reaching out. Our team will review your request and contact you within 24 hours with a detailed quote.
                     </p>
                     <button
                       onClick={() => { setSubmitted(false); setForm({ name: "", phone: "", email: "", projectType: "", budget: "", message: "" }); }}
                       style={{
-                        backgroundColor: "#FBBF24",
-                        color: "#0F172A",
+                        backgroundColor: "#B88A52",
+                        color: "#FFFDF9",
                         fontFamily: "'Poppins', sans-serif",
                         fontWeight: 700,
                         fontSize: "0.95rem",
@@ -317,16 +317,16 @@ export function Contact() {
                           <span
                             key={item}
                             className="px-3 py-1.5 rounded-full"
-                            style={{ backgroundColor: "rgba(251,191,36,0.08)", border: "1px solid rgba(251,191,36,0.18)", color: "#F8FAFC", fontFamily: "'Inter', sans-serif", fontSize: "0.78rem" }}
+                            style={{ backgroundColor: "#F8F3EA", border: "1px solid rgba(184,138,82,0.16)", color: "#334155", fontFamily: "'Inter', sans-serif", fontSize: "0.78rem" }}
                           >
                             {item}
                           </span>
                         ))}
                       </div>
-                      <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, color: "white", fontSize: "clamp(1.65rem, 2.8vw, 2.15rem)", lineHeight: 1.12, marginBottom: "0.45rem", maxWidth: "24rem" }}>
-                        Request a <span style={{ color: "#FBBF24" }}>Consultation</span>
+                      <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, color: "#1F2933", fontSize: "clamp(1.65rem, 2.8vw, 2.15rem)", lineHeight: 1.12, marginBottom: "0.45rem", maxWidth: "24rem" }}>
+                        Request a <span style={{ color: "#B88A52" }}>Consultation</span>
                       </h2>
-                      <p style={{ color: "#94A3B8", fontFamily: "'Inter', sans-serif", fontSize: "0.88rem", lineHeight: 1.65, maxWidth: "36rem" }}>
+                      <p style={{ color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.88rem", lineHeight: 1.65, maxWidth: "36rem" }}>
                         Fill out the form and we'll get back to you with thoughtful recommendations, likely costs, and the best next move for your project. You can also call or WhatsApp us at {DISPLAY_CONTACT_NUMBER}.
                       </p>
                       {submitError && (
@@ -340,7 +340,7 @@ export function Contact() {
                       {/* Name & Phone */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div>
-                          <label style={{ display: "block", color: "#94A3B8", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
+                          <label style={{ display: "block", color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
                             Full Name *
                           </label>
                           <input
@@ -355,7 +355,7 @@ export function Contact() {
                           />
                         </div>
                         <div>
-                          <label style={{ display: "block", color: "#94A3B8", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
+                          <label style={{ display: "block", color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
                             Phone Number *
                           </label>
                           <input
@@ -373,7 +373,7 @@ export function Contact() {
 
                       {/* Email */}
                       <div>
-                        <label style={{ display: "block", color: "#94A3B8", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
+                        <label style={{ display: "block", color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
                           Email Address
                         </label>
                         <input
@@ -389,7 +389,7 @@ export function Contact() {
 
                       {/* Project Type */}
                       <div>
-                          <label style={{ display: "block", color: "#94A3B8", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
+                          <label style={{ display: "block", color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
                             Project Type *
                           </label>
                         <select
@@ -407,7 +407,7 @@ export function Contact() {
 
                       {/* Budget */}
                       <div>
-                        <label style={{ display: "block", color: "#94A3B8", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
+                        <label style={{ display: "block", color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
                           Estimated Budget
                         </label>
                         <input
@@ -423,7 +423,7 @@ export function Contact() {
 
                       {/* Message */}
                       <div>
-                        <label style={{ display: "block", color: "#94A3B8", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
+                        <label style={{ display: "block", color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.85rem", fontWeight: 500, marginBottom: "0.5rem" }}>
                           Project Description
                         </label>
                         <textarea
@@ -441,21 +441,21 @@ export function Contact() {
                         type="submit"
                         className="flex items-center justify-center gap-2 py-4 rounded-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
                         style={{
-                          backgroundColor: "#FBBF24",
-                          color: "#0F172A",
+                          backgroundColor: "#B88A52",
+                          color: "#FFFDF9",
                           fontFamily: "'Poppins', sans-serif",
                           fontWeight: 700,
                           fontSize: "0.96rem",
                           border: "none",
                           cursor: "pointer",
-                          boxShadow: "0 0 40px rgba(251,191,36,0.25)",
+                          boxShadow: "0 18px 45px rgba(184,138,82,0.18)",
                           opacity: isSubmitting ? 0.8 : 1,
                         }}
                         disabled={isSubmitting}
                       >
                         <Send size={18} /> {isSubmitting ? "Sending..." : "Send Project Request"}
                       </button>
-                      <p style={{ color: "#64748B", fontFamily: "'Inter', sans-serif", fontSize: "0.8rem", lineHeight: 1.6, textAlign: "center" }}>
+                      <p style={{ color: "#6B7280", fontFamily: "'Inter', sans-serif", fontSize: "0.8rem", lineHeight: 1.6, textAlign: "center" }}>
                         Your details are used only to respond to your project inquiry.
                       </p>
                     </form>

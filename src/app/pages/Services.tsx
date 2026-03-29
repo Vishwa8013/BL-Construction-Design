@@ -60,20 +60,20 @@ export function Services() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div style={{ backgroundColor: "#0F172A" }}>
+    <div style={{ backgroundColor: "#F8F3EA" }}>
       {/* Page Hero */}
       <div
         className="pt-40 pb-20 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden"
-        style={{ background: "linear-gradient(to bottom, #0B1527, #0F172A)" }}
+        style={{ background: "linear-gradient(to bottom, #F8F3EA, #F2ECE1)" }}
       >
-        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 50% 50%, #FBBF24 0%, transparent 70%)" }} />
-        <div style={{ color: "#FBBF24", fontSize: "0.8rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: "'Inter', sans-serif", fontWeight: 600, marginBottom: "0.75rem" }}>
+        <div className="absolute inset-0 opacity-30" style={{ backgroundImage: "radial-gradient(circle at 50% 50%, rgba(184,138,82,0.14) 0%, transparent 70%)" }} />
+        <div style={{ color: "#B88A52", fontSize: "0.8rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: "'Inter', sans-serif", fontWeight: 600, marginBottom: "0.75rem" }}>
           What We Offer
         </div>
-        <h1 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(2.5rem, 6vw, 4.5rem)", color: "white", lineHeight: 1.1, marginBottom: "1.25rem" }}>
-          Our <span style={{ color: "#FBBF24" }}>Services</span>
+        <h1 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(2.5rem, 6vw, 4.5rem)", color: "#1F2933", lineHeight: 1.1, marginBottom: "1.25rem" }}>
+          Our <span style={{ color: "#B88A52" }}>Services</span>
         </h1>
-        <p style={{ color: "#64748B", fontFamily: "'Inter', sans-serif", fontSize: "1.1rem", maxWidth: "38rem", margin: "0 auto", lineHeight: 1.7 }}>
+        <p style={{ color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "1.1rem", maxWidth: "38rem", margin: "0 auto", lineHeight: 1.7 }}>
           Practical construction and design services for residential and commercial projects, delivered with quality workmanship and clear communication.
         </p>
       </div>
@@ -87,10 +87,10 @@ export function Services() {
                 key={i}
                 className="p-8 rounded-2xl cursor-pointer relative overflow-hidden transition-all duration-400"
                 style={{
-                  backgroundColor: hovered === i ? "#131F35" : "#111827",
-                  border: hovered === i ? "1px solid rgba(251,191,36,0.5)" : "1px solid rgba(255,255,255,0.07)",
+                  backgroundColor: hovered === i ? "#FFF8EE" : "#FFFDF9",
+                  border: hovered === i ? "1px solid rgba(184,138,82,0.35)" : "1px solid rgba(92,71,43,0.08)",
                   transform: hovered === i ? "translateY(-8px)" : "translateY(0)",
-                  boxShadow: hovered === i ? "0 24px 70px rgba(0,0,0,0.5), 0 0 40px rgba(251,191,36,0.08)" : "none",
+                  boxShadow: hovered === i ? "0 22px 55px rgba(31,41,51,0.12)" : "0 10px 24px rgba(31,41,51,0.05)",
                   transition: "all 0.35s cubic-bezier(0.4,0,0.2,1)",
                 }}
                 onMouseEnter={() => setHovered(i)}
@@ -109,31 +109,31 @@ export function Services() {
                 {hovered === i && (
                   <div
                     className="absolute -top-20 -left-20 w-64 h-64 rounded-full pointer-events-none"
-                    style={{ background: "radial-gradient(circle, rgba(251,191,36,0.06) 0%, transparent 70%)" }}
+                    style={{ background: "radial-gradient(circle, rgba(184,138,82,0.08) 0%, transparent 70%)" }}
                   />
                 )}
 
                 <div
                   className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300"
                   style={{
-                    backgroundColor: hovered === i ? "#FBBF24" : "rgba(251,191,36,0.1)",
+                    backgroundColor: hovered === i ? "#B88A52" : "rgba(184,138,82,0.12)",
                   }}
                 >
-                  <Icon size={28} style={{ color: hovered === i ? "#0F172A" : "#FBBF24" }} />
+                  <Icon size={28} style={{ color: hovered === i ? "#FFFDF9" : "#B88A52" }} />
                 </div>
 
-                <h3 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, color: "white", fontSize: "1.2rem", marginBottom: "0.75rem" }}>
+                <h3 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, color: "#1F2933", fontSize: "1.2rem", marginBottom: "0.75rem" }}>
                   {title}
                 </h3>
-                <p style={{ color: "#64748B", fontFamily: "'Inter', sans-serif", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "1.5rem" }}>
+                <p style={{ color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "1.5rem" }}>
                   {desc}
                 </p>
 
                 <ul className="flex flex-col gap-2.5 mb-6">
                   {features.map((feature) => (
                     <li key={feature} className="flex items-center gap-2.5">
-                      <CheckCircle size={15} style={{ color: "#FBBF24", flexShrink: 0 }} />
-                      <span style={{ color: "#94A3B8", fontFamily: "'Inter', sans-serif", fontSize: "0.875rem" }}>{feature}</span>
+                      <CheckCircle size={15} style={{ color: "#B88A52", flexShrink: 0 }} />
+                      <span style={{ color: "#6B7280", fontFamily: "'Inter', sans-serif", fontSize: "0.875rem" }}>{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -142,7 +142,7 @@ export function Services() {
                   to="/contact"
                   className="inline-flex items-center gap-1.5 transition-all"
                   style={{
-                    color: "#FBBF24",
+                    color: "#B88A52",
                     fontFamily: "'Inter', sans-serif",
                     fontWeight: 600,
                     fontSize: "0.875rem",
@@ -158,16 +158,16 @@ export function Services() {
       </section>
 
       {/* PROCESS */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#0B1527" }}>
+      <section className="py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#F2ECE1" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div style={{ color: "#FBBF24", fontSize: "0.8rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: "'Inter', sans-serif", fontWeight: 600, marginBottom: "0.75rem" }}>
+            <div style={{ color: "#B88A52", fontSize: "0.8rem", letterSpacing: "0.2em", textTransform: "uppercase", fontFamily: "'Inter', sans-serif", fontWeight: 600, marginBottom: "0.75rem" }}>
               How We Work
             </div>
-            <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "white" }}>
-              Our <span style={{ color: "#FBBF24" }}>Process</span>
+            <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "#1F2933" }}>
+              Our <span style={{ color: "#B88A52" }}>Process</span>
             </h2>
-            <p style={{ color: "#64748B", fontFamily: "'Inter', sans-serif", maxWidth: "36rem", margin: "1rem auto 0", lineHeight: 1.7 }}>
+            <p style={{ color: "#5E6770", fontFamily: "'Inter', sans-serif", maxWidth: "36rem", margin: "1rem auto 0", lineHeight: 1.7 }}>
               A proven 6-step process that ensures every project is delivered with excellence, transparency, and precision.
             </p>
           </div>
@@ -177,16 +177,16 @@ export function Services() {
               <div
                 key={step}
                 className="p-8 rounded-2xl relative"
-                style={{ backgroundColor: "#0F172A", border: "1px solid rgba(255,255,255,0.06)" }}
+                style={{ backgroundColor: "#FFFDF9", border: "1px solid rgba(92,71,43,0.08)", boxShadow: "0 10px 24px rgba(31,41,51,0.05)" }}
               >
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
-                  style={{ backgroundColor: "rgba(251,191,36,0.1)" }}
+                  style={{ backgroundColor: "rgba(184,138,82,0.12)" }}
                 >
-                  <span style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, color: "#FBBF24", fontSize: "1rem" }}>{step}</span>
+                  <span style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, color: "#B88A52", fontSize: "1rem" }}>{step}</span>
                 </div>
-                <h4 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, color: "white", fontSize: "1.05rem", marginBottom: "0.6rem" }}>{title}</h4>
-                <p style={{ color: "#64748B", fontFamily: "'Inter', sans-serif", fontSize: "0.875rem", lineHeight: 1.7 }}>{desc}</p>
+                <h4 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, color: "#1F2933", fontSize: "1.05rem", marginBottom: "0.6rem" }}>{title}</h4>
+                <p style={{ color: "#5E6770", fontFamily: "'Inter', sans-serif", fontSize: "0.875rem", lineHeight: 1.7 }}>{desc}</p>
               </div>
             ))}
           </div>
@@ -196,26 +196,26 @@ export function Services() {
       {/* CTA */}
       <section
         className="py-20 px-4 sm:px-6 lg:px-8 text-center"
-        style={{ borderTop: "1px solid rgba(251,191,36,0.1)" }}
+        style={{ borderTop: "1px solid rgba(92,71,43,0.08)" }}
       >
         <div className="max-w-2xl mx-auto">
-            <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(2rem, 4vw, 3rem)", color: "white", marginBottom: "1rem" }}>
-              Ready to Get <span style={{ color: "#FBBF24" }}>Started?</span>
+            <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(2rem, 4vw, 3rem)", color: "#1F2933", marginBottom: "1rem" }}>
+              Ready to Get <span style={{ color: "#B88A52" }}>Started?</span>
             </h2>
-          <p style={{ color: "#64748B", fontFamily: "'Inter', sans-serif", lineHeight: 1.7, marginBottom: "2rem" }}>
+          <p style={{ color: "#5E6770", fontFamily: "'Inter', sans-serif", lineHeight: 1.7, marginBottom: "2rem" }}>
             Contact our team for a free consultation and clear guidance for your next project.
           </p>
           <Link
             to="/contact"
             className="inline-flex items-center gap-2 px-10 py-4 rounded-xl transition-all hover:scale-105"
             style={{
-              backgroundColor: "#FBBF24",
-              color: "#0F172A",
+              backgroundColor: "#B88A52",
+              color: "#FFFDF9",
               fontFamily: "'Poppins', sans-serif",
               fontWeight: 700,
               fontSize: "1rem",
               textDecoration: "none",
-              boxShadow: "0 0 40px rgba(251,191,36,0.3)",
+              boxShadow: "0 18px 45px rgba(184,138,82,0.24)",
             }}
           >
             Request a Consultation <ArrowRight size={18} />
